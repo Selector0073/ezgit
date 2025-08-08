@@ -1,0 +1,49 @@
+#!/bin/bash
+
+if [$1 == "--pull"]; then
+    git pull https://github.com/$2
+
+elif [$1 == "--clone"]; then
+    git clone https://github.com/$2
+
+elif [$1 == "--cap"]; then
+    git add .
+    echo "Commit text:"
+    read committext
+    git commit -m "$committext"
+    git push
+
+elif [$1 == "--login"]; then
+    echo "Your username:"
+    read username
+    git config --global user.name "$username"
+    echo "Cool username!"
+
+    echo "E-mail"
+    read email
+    git config --global user.email $email
+
+elif [$1 == "--help"]; then
+    echo "ezgit <--command> <path>"
+    
+    echo ""
+    echo ""
+
+    echo "--pull:"
+    echo "ezgit --pull username/project"
+    echo ""
+
+    echo "--clone:"
+    echo "ezgit --clone username/project"
+    echo ""
+
+    echo "--cap:"
+    echo "Commit and pull"
+    echo ""
+
+    echo "--login:"
+    echo ""
+
+    echo "--help:"
+
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+chmod +x ezgit
+sudo mv ezgit /usr/local/bin/
