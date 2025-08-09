@@ -2,6 +2,12 @@
 
 chmod +x ezgit
 mkdir -p ~/.local/bin
+echo -ne '[#####                     ](33%)\r'
+sleep 1
 sudo mv ezgit /usr/local/bin/
+echo -ne '[#############             ](66%)\r'
+sleep 1
 sudo echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+echo -ne '[#######################   ](100%)\r'
+echo -ne '\n'
 source ~/.bashrc
