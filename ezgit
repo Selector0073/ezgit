@@ -1,19 +1,19 @@
 #!/bin/bash
 
-if [$1 -eq "--pull"]; then
+if [["$1" == "--pull"]]; then
     git pull https://github.com/$2
 
-elif [$1 -eq "--clone"]; then
+elif [["$1" == "--clone"]]; then
     git clone https://github.com/$2
 
-elif [$1 -eq "--cap"]; then
+elif [["$1" == "--cap"]]; then
     git add .
     echo "Commit text:"
     read committext
     git commit -m "$committext"
     git push
 
-elif [$1 -eq "--login"]; then
+elif [["$1" == "--login"]]; then
     echo "Your username:"
     read username
     git config --global user.name "$username"
@@ -23,7 +23,7 @@ elif [$1 -eq "--login"]; then
     read email
     git config --global user.email $email
 
-elif [$1 -eq "--help"]; then
+elif [["$1" == "--help"]]; then
     echo "ezgit <--command> <path>"
     
     echo ""
