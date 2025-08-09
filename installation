@@ -1,7 +1,7 @@
 #!/bin/bash
 
-chmod +x ezgit
-mkdir -p ~/.local/bin
+sudo chmod +x ezgit
+sudo mkdir -p ~/.local/bin
 sudo mv ezgit /usr/local/bin/
 sudo echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+sudo source ~/.bashrc
