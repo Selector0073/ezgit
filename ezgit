@@ -30,14 +30,17 @@ elif [$1 == "--help"]; then
     echo ""
 
     echo "--pull:"
+    echo "*update"
     echo "ezgit --pull username/project"
     echo ""
 
     echo "--clone:"
+    echo "*copy"
     echo "ezgit --clone username/project"
     echo ""
 
     echo "--cap:"
+    echo "*send"
     echo "Commit and pull"
     echo ""
 
