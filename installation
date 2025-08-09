@@ -4,4 +4,4 @@ sudo chmod +x ezgit
 sudo mkdir -p ~/.local/bin
 sudo mv ezgit /usr/local/bin/
 sudo echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-sudo source ~/.bashrc
+source ~/.bashrc
