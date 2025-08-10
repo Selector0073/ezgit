@@ -17,22 +17,22 @@ git clone https://github.com/Selector0073/ezgit && cd ezgit && sudo bash ./insta
 
 # To get help type:
 ```
-ezgit --help
+ezgit help
 ```
 or
 ```
-ezgit <--command> <path>
+ezgit <command> <path>
 
---pull:
-ezgit --pull username/project
+pull:
+ezgit pull username/project
 
---clone:
-ezgit --clone username/project
+clone:
+ezgit clone username/project
 
---cap:
-Commit and pull
+cp:
+Commit and push
 
---login
+login
 
---help
+help
 ```
