@@ -9,10 +9,6 @@
 ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 
-![Work in progress](https://img.shields.io/badge/Work%20in%20progress!%20-%20%238B8000)
-![Broken](https://img.shields.io/badge/BROKEN%20SCRIPT!%20-%20red)
-
-
 # Installation instructions:
 Debian and debian based systems:
 ```
